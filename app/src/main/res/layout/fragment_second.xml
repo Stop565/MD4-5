@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".SecondFragment.SecondFragment">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        >
+        <LinearLayout
+            android:id="@+id/graph_container"
+            android:orientation="vertical"
+            android:layout_width="900px"
+            android:layout_height="900px"
+            android:layout_gravity="center"
+
+            >
+            <com.jjoe64.graphview.GraphView
+                android:id="@+id/first_elem"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                />
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/second_elem"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/plot_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50px"
+            android:layout_marginBottom="200px"
+            android:checked="false"
+            android:textOff="OFF"
+            android:textOn="ON" />
+    </LinearLayout>
+
+</FrameLayout>

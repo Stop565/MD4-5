@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <GridLayout
+        android:id="@+id/image_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4">
+        <ImageView
+            android:id="@+id/small_picture"
+            android:src="@drawable/image_01"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:layout_columnSpan="1"
+            />
+
+        <ImageView
+            android:id="@+id/big_picture"
+            android:src="@drawable/image_01"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="3"
+            android:layout_rowWeight="3"
+            android:layout_rowSpan="3"
+            android:layout_columnSpan="3"
+            android:layout_gravity="fill"
+             />
+    </GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

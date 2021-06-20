@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/first"
+        android:title="Main"
+        android:icon="@drawable/ic_action_first"
+        />
+    <item
+        android:id="@+id/second"
+        android:title="Drawing"
+        android:icon="@drawable/ic_palette_black_24dp"
+        />
+    <item
+        android:id="@+id/third"
+        android:title="Book list"
+        android:icon="@drawable/ic_book_black_24dp"
+        />
+    <item
+        android:id="@+id/forth"
+        android:title="Gallery"
+        android:icon="@drawable/ic_baseline_image_24"
+        />
+
+</menu>
